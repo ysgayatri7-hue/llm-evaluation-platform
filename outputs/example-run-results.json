@@ -1,0 +1,865 @@
+{
+  "run": {
+    "id": 1,
+    "experiment_id": 1,
+    "status": "completed",
+    "total_cases": 24,
+    "completed_cases": 24,
+    "error_count": 0,
+    "created_at": "2026-10-14T11:23:38.217525"
+  },
+  "experiment": {
+    "id": 1,
+    "name": "Executed mock comparison",
+    "dataset_version_id": 1,
+    "models": [
+      "mock/baseline",
+      "mock/challenger"
+    ],
+    "metrics": [
+      "exact_match",
+      "token_f1",
+      "faithfulness",
+      "consistency"
+    ],
+    "judge_model": null,
+    "repetitions": 3,
+    "temperature": 0.0,
+    "prompt_template": "{prompt}",
+    "notes": "Generated locally with the deterministic mock provider."
+  },
+  "results": [
+    {
+      "id": 1,
+      "example_id": "syn-001",
+      "prompt": "What is the capital of France?",
+      "reference_answer": "Paris",
+      "context": "Paris is the capital and most populous city of France.",
+      "task_type": "factual_qa",
+      "model": "mock/baseline",
+      "repetition": 1,
+      "output": "Paris",
+      "latency_ms": 12.13,
+      "tokens": 7,
+      "estimated_cost_usd": 1.5e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "consistency": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": "Similarity measures stability, not factual correctness."
+        }
+      }
+    },
+    {
+      "id": 2,
+      "example_id": "syn-001",
+      "prompt": "What is the capital of France?",
+      "reference_answer": "Paris",
+      "context": "Paris is the capital and most populous city of France.",
+      "task_type": "factual_qa",
+      "model": "mock/baseline",
+      "repetition": 2,
+      "output": "Paris",
+      "latency_ms": 26.05,
+      "tokens": 7,
+      "estimated_cost_usd": 1.5e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        }
+      }
+    },
+    {
+      "id": 3,
+      "example_id": "syn-001",
+      "prompt": "What is the capital of France?",
+      "reference_answer": "Paris",
+      "context": "Paris is the capital and most populous city of France.",
+      "task_type": "factual_qa",
+      "model": "mock/baseline",
+      "repetition": 3,
+      "output": "Paris",
+      "latency_ms": 24.1,
+      "tokens": 7,
+      "estimated_cost_usd": 1.5e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        }
+      }
+    },
+    {
+      "id": 4,
+      "example_id": "syn-001",
+      "prompt": "What is the capital of France?",
+      "reference_answer": "Paris",
+      "context": "Paris is the capital and most populous city of France.",
+      "task_type": "factual_qa",
+      "model": "mock/challenger",
+      "repetition": 1,
+      "output": "Paris",
+      "latency_ms": 41.05,
+      "tokens": 7,
+      "estimated_cost_usd": 1.5e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "consistency": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": "Similarity measures stability, not factual correctness."
+        }
+      }
+    },
+    {
+      "id": 5,
+      "example_id": "syn-001",
+      "prompt": "What is the capital of France?",
+      "reference_answer": "Paris",
+      "context": "Paris is the capital and most populous city of France.",
+      "task_type": "factual_qa",
+      "model": "mock/challenger",
+      "repetition": 2,
+      "output": "A plausible but intentionally imperfect answer about What is the capital of France?.",
+      "latency_ms": 18.07,
+      "tokens": 19,
+      "estimated_cost_usd": 8.7e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 0.38461538461538464,
+          "skip_reason": null,
+          "reasoning": null
+        }
+      }
+    },
+    {
+      "id": 6,
+      "example_id": "syn-001",
+      "prompt": "What is the capital of France?",
+      "reference_answer": "Paris",
+      "context": "Paris is the capital and most populous city of France.",
+      "task_type": "factual_qa",
+      "model": "mock/challenger",
+      "repetition": 3,
+      "output": "A plausible but intentionally imperfect answer about What is the capital of France?.",
+      "latency_ms": 13.05,
+      "tokens": 19,
+      "estimated_cost_usd": 8.7e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 0.38461538461538464,
+          "skip_reason": null,
+          "reasoning": null
+        }
+      }
+    },
+    {
+      "id": 7,
+      "example_id": "syn-002",
+      "prompt": "Which planet is called the Red Planet?",
+      "reference_answer": "Mars",
+      "context": "Mars is often called the Red Planet because iron minerals in its soil oxidize.",
+      "task_type": "factual_qa",
+      "model": "mock/baseline",
+      "repetition": 1,
+      "output": "Mars",
+      "latency_ms": 9.05,
+      "tokens": 8,
+      "estimated_cost_usd": 1.65e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "consistency": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": "Similarity measures stability, not factual correctness."
+        }
+      }
+    },
+    {
+      "id": 8,
+      "example_id": "syn-002",
+      "prompt": "Which planet is called the Red Planet?",
+      "reference_answer": "Mars",
+      "context": "Mars is often called the Red Planet because iron minerals in its soil oxidize.",
+      "task_type": "factual_qa",
+      "model": "mock/baseline",
+      "repetition": 2,
+      "output": "Mars",
+      "latency_ms": 19.04,
+      "tokens": 8,
+      "estimated_cost_usd": 1.65e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        }
+      }
+    },
+    {
+      "id": 9,
+      "example_id": "syn-002",
+      "prompt": "Which planet is called the Red Planet?",
+      "reference_answer": "Mars",
+      "context": "Mars is often called the Red Planet because iron minerals in its soil oxidize.",
+      "task_type": "factual_qa",
+      "model": "mock/baseline",
+      "repetition": 3,
+      "output": "Mars",
+      "latency_ms": 42.05,
+      "tokens": 8,
+      "estimated_cost_usd": 1.65e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        }
+      }
+    },
+    {
+      "id": 10,
+      "example_id": "syn-002",
+      "prompt": "Which planet is called the Red Planet?",
+      "reference_answer": "Mars",
+      "context": "Mars is often called the Red Planet because iron minerals in its soil oxidize.",
+      "task_type": "factual_qa",
+      "model": "mock/challenger",
+      "repetition": 1,
+      "output": "A plausible but intentionally imperfect answer about Which planet is called the Red Planet?.",
+      "latency_ms": 33.05,
+      "tokens": 21,
+      "estimated_cost_usd": 9.45e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 0.38461538461538464,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "consistency": {
+          "score": 0.5,
+          "skip_reason": null,
+          "reasoning": "Similarity measures stability, not factual correctness."
+        }
+      }
+    },
+    {
+      "id": 11,
+      "example_id": "syn-002",
+      "prompt": "Which planet is called the Red Planet?",
+      "reference_answer": "Mars",
+      "context": "Mars is often called the Red Planet because iron minerals in its soil oxidize.",
+      "task_type": "factual_qa",
+      "model": "mock/challenger",
+      "repetition": 2,
+      "output": "Mars",
+      "latency_ms": 37.11,
+      "tokens": 8,
+      "estimated_cost_usd": 1.65e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        }
+      }
+    },
+    {
+      "id": 12,
+      "example_id": "syn-002",
+      "prompt": "Which planet is called the Red Planet?",
+      "reference_answer": "Mars",
+      "context": "Mars is often called the Red Planet because iron minerals in its soil oxidize.",
+      "task_type": "factual_qa",
+      "model": "mock/challenger",
+      "repetition": 3,
+      "output": "A plausible but intentionally imperfect answer about Which planet is called the Red Planet?.",
+      "latency_ms": 23.05,
+      "tokens": 21,
+      "estimated_cost_usd": 9.45e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 0.38461538461538464,
+          "skip_reason": null,
+          "reasoning": null
+        }
+      }
+    },
+    {
+      "id": 13,
+      "example_id": "syn-003",
+      "prompt": "What gas do plants primarily absorb during photosynthesis?",
+      "reference_answer": "Carbon dioxide",
+      "context": "Plants absorb carbon dioxide during photosynthesis and release oxygen.",
+      "task_type": "factual_qa",
+      "model": "mock/baseline",
+      "repetition": 1,
+      "output": "Carbon dioxide",
+      "latency_ms": 11.05,
+      "tokens": 10,
+      "estimated_cost_usd": 2.4e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "consistency": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": "Similarity measures stability, not factual correctness."
+        }
+      }
+    },
+    {
+      "id": 14,
+      "example_id": "syn-003",
+      "prompt": "What gas do plants primarily absorb during photosynthesis?",
+      "reference_answer": "Carbon dioxide",
+      "context": "Plants absorb carbon dioxide during photosynthesis and release oxygen.",
+      "task_type": "factual_qa",
+      "model": "mock/baseline",
+      "repetition": 2,
+      "output": "Carbon dioxide",
+      "latency_ms": 16.05,
+      "tokens": 10,
+      "estimated_cost_usd": 2.4e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        }
+      }
+    },
+    {
+      "id": 15,
+      "example_id": "syn-003",
+      "prompt": "What gas do plants primarily absorb during photosynthesis?",
+      "reference_answer": "Carbon dioxide",
+      "context": "Plants absorb carbon dioxide during photosynthesis and release oxygen.",
+      "task_type": "factual_qa",
+      "model": "mock/baseline",
+      "repetition": 3,
+      "output": "Carbon dioxide",
+      "latency_ms": 40.06,
+      "tokens": 10,
+      "estimated_cost_usd": 2.4e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        }
+      }
+    },
+    {
+      "id": 16,
+      "example_id": "syn-003",
+      "prompt": "What gas do plants primarily absorb during photosynthesis?",
+      "reference_answer": "Carbon dioxide",
+      "context": "Plants absorb carbon dioxide during photosynthesis and release oxygen.",
+      "task_type": "factual_qa",
+      "model": "mock/challenger",
+      "repetition": 1,
+      "output": "Carbon dioxide",
+      "latency_ms": 26.56,
+      "tokens": 10,
+      "estimated_cost_usd": 2.4e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "consistency": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": "Similarity measures stability, not factual correctness."
+        }
+      }
+    },
+    {
+      "id": 17,
+      "example_id": "syn-003",
+      "prompt": "What gas do plants primarily absorb during photosynthesis?",
+      "reference_answer": "Carbon dioxide",
+      "context": "Plants absorb carbon dioxide during photosynthesis and release oxygen.",
+      "task_type": "factual_qa",
+      "model": "mock/challenger",
+      "repetition": 2,
+      "output": "Carbon dioxide",
+      "latency_ms": 14.14,
+      "tokens": 10,
+      "estimated_cost_usd": 2.4e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        }
+      }
+    },
+    {
+      "id": 18,
+      "example_id": "syn-003",
+      "prompt": "What gas do plants primarily absorb during photosynthesis?",
+      "reference_answer": "Carbon dioxide",
+      "context": "Plants absorb carbon dioxide during photosynthesis and release oxygen.",
+      "task_type": "factual_qa",
+      "model": "mock/challenger",
+      "repetition": 3,
+      "output": "Carbon dioxide",
+      "latency_ms": 30.06,
+      "tokens": 10,
+      "estimated_cost_usd": 2.4e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        }
+      }
+    },
+    {
+      "id": 19,
+      "example_id": "syn-004",
+      "prompt": "Who wrote Pride and Prejudice?",
+      "reference_answer": "Jane Austen",
+      "context": "Pride and Prejudice is an 1813 novel by English author Jane Austen.",
+      "task_type": "factual_qa",
+      "model": "mock/baseline",
+      "repetition": 1,
+      "output": "Jane Austen",
+      "latency_ms": 11.07,
+      "tokens": 7,
+      "estimated_cost_usd": 1.95e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "consistency": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": "Similarity measures stability, not factual correctness."
+        }
+      }
+    },
+    {
+      "id": 20,
+      "example_id": "syn-004",
+      "prompt": "Who wrote Pride and Prejudice?",
+      "reference_answer": "Jane Austen",
+      "context": "Pride and Prejudice is an 1813 novel by English author Jane Austen.",
+      "task_type": "factual_qa",
+      "model": "mock/baseline",
+      "repetition": 2,
+      "output": "A plausible but intentionally imperfect answer about Who wrote Pride and Prejudice?.",
+      "latency_ms": 33.12,
+      "tokens": 17,
+      "estimated_cost_usd": 7.95e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 0.25,
+          "skip_reason": null,
+          "reasoning": null
+        }
+      }
+    },
+    {
+      "id": 21,
+      "example_id": "syn-004",
+      "prompt": "Who wrote Pride and Prejudice?",
+      "reference_answer": "Jane Austen",
+      "context": "Pride and Prejudice is an 1813 novel by English author Jane Austen.",
+      "task_type": "factual_qa",
+      "model": "mock/baseline",
+      "repetition": 3,
+      "output": "A plausible but intentionally imperfect answer about Who wrote Pride and Prejudice?.",
+      "latency_ms": 38.08,
+      "tokens": 17,
+      "estimated_cost_usd": 7.95e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 0.25,
+          "skip_reason": null,
+          "reasoning": null
+        }
+      }
+    },
+    {
+      "id": 22,
+      "example_id": "syn-004",
+      "prompt": "Who wrote Pride and Prejudice?",
+      "reference_answer": "Jane Austen",
+      "context": "Pride and Prejudice is an 1813 novel by English author Jane Austen.",
+      "task_type": "factual_qa",
+      "model": "mock/challenger",
+      "repetition": 1,
+      "output": "A plausible but intentionally imperfect answer about Who wrote Pride and Prejudice?.",
+      "latency_ms": 18.06,
+      "tokens": 17,
+      "estimated_cost_usd": 7.95e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 0.25,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "consistency": {
+          "score": 0.0,
+          "skip_reason": null,
+          "reasoning": "Similarity measures stability, not factual correctness."
+        }
+      }
+    },
+    {
+      "id": 23,
+      "example_id": "syn-004",
+      "prompt": "Who wrote Pride and Prejudice?",
+      "reference_answer": "Jane Austen",
+      "context": "Pride and Prejudice is an 1813 novel by English author Jane Austen.",
+      "task_type": "factual_qa",
+      "model": "mock/challenger",
+      "repetition": 2,
+      "output": "Jane Austen",
+      "latency_ms": 14.09,
+      "tokens": 7,
+      "estimated_cost_usd": 1.95e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        }
+      }
+    },
+    {
+      "id": 24,
+      "example_id": "syn-004",
+      "prompt": "Who wrote Pride and Prejudice?",
+      "reference_answer": "Jane Austen",
+      "context": "Pride and Prejudice is an 1813 novel by English author Jane Austen.",
+      "task_type": "factual_qa",
+      "model": "mock/challenger",
+      "repetition": 3,
+      "output": "Jane Austen",
+      "latency_ms": 25.09,
+      "tokens": 7,
+      "estimated_cost_usd": 1.95e-06,
+      "usage_is_estimated": true,
+      "error": null,
+      "metrics": {
+        "exact_match": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "token_f1": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        },
+        "faithfulness": {
+          "score": 1.0,
+          "skip_reason": null,
+          "reasoning": null
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment: {POSTGRES_USER: evalai, POSTGRES_PASSWORD: evalai, POSTGRES_DB: evalai}
+    volumes: [evalai-data:/var/lib/postgresql/data]
+    healthcheck: {test: ["CMD-SHELL", "pg_isready -U evalai"], interval: 5s, timeout: 5s, retries: 10}
+  backend:
+    build: ./backend
+    environment: {DATABASE_URL: postgresql+psycopg://evalai:evalai@db:5432/evalai, MOCK_MODE: "true"}
+    ports: ["8000:8000"]
+    depends_on: {db: {condition: service_healthy}}
+  frontend:
+    build: ./frontend
+    ports: ["5173:80"]
+    depends_on: [backend]
+volumes: {evalai-data: {}}
+

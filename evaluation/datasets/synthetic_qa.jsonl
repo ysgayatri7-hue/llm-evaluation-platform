@@ -1,0 +1,5 @@
+{"example_id":"syn-001","prompt":"What is the capital of France?","reference_answer":"Paris","context":"Paris is the capital and most populous city of France.","task_type":"factual_qa","human_judgment":{"correctness":1}}
+{"example_id":"syn-002","prompt":"Which planet is called the Red Planet?","reference_answer":"Mars","context":"Mars is often called the Red Planet because iron minerals in its soil oxidize.","task_type":"factual_qa","human_judgment":{"correctness":1}}
+{"example_id":"syn-003","prompt":"What gas do plants primarily absorb during photosynthesis?","reference_answer":"Carbon dioxide","context":"Plants absorb carbon dioxide during photosynthesis and release oxygen.","task_type":"factual_qa","human_judgment":{"correctness":1}}
+{"example_id":"syn-004","prompt":"Who wrote Pride and Prejudice?","reference_answer":"Jane Austen","context":"Pride and Prejudice is an 1813 novel by English author Jane Austen.","task_type":"factual_qa","human_judgment":{"correctness":1}}
+
